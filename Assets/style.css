@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-container {
+  background-color: #fff;
+  width: 60%;
+}
+h1 {
+  text-align: center;
+  margin: 50px;
+}
+ul {
+  /* margin-left: 5rem; */
+  list-style: none;
+  margin: 0 50px;
+}
+li {
+  margin: 25px 0;
+  font-size: 1.15rem;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+}
+input {
+  margin-right: 15px;
+}
+
+/* li:hover {
+  background-color: cornflowerblue;
+  color: #fff;
+} */
+input[type="radio"]:checked + ul {
+  /* color: aqua; */
+  background-color: aquamarine;
+}
+button {
+  margin-top: 50px;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: rgb(21, 92, 223);
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+button:hover {
+  background-color: cornflowerblue;
+}
+input {
+  opacity: 0;
+  width: 0;
+}
+
+label:focus {
+  background-color: blue;
+}
+#b_text,
+#a_text,
+#c_text {
+  width: 100%;
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#b_text:hover,
+#a_text:hover,
+#c_text:hover {
+  background-color: cornflowerblue;
+  color: #fff;
+}
+
+.clicked {
+  background-color: rgb(21, 92, 223);
+  color: #fff;
+}
+
+.score {
+  border: 10px solid greenyellow;
+  padding: 30px;
+  width: fit-content;
+  border-radius: 50%;
+  margin: auto;
+  font-size: 50px;
+  font-weight: bold;
+}
+.scoreText {
+  margin: 1rem 0;
+}
